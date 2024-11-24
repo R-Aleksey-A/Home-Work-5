@@ -44,10 +44,20 @@ public class Main {
         if (iosYear) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
-        boolean androidYear = clientOs == 1 && clientDeviceYear <2015;
+        boolean androidYear = clientOs == 1 && clientDeviceYear < 2015;
 
         if (androidYear) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        }
+
+        System.out.println();
+        System.out.println("Задание-3");
+        int year = 2024;
+        if (((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0 && year % 100 == 0)) && year > 1584) {
+
+            System.out.println("Год является високосным");
+        } else {
+            System.out.println("Год не является високосным");
         }
 
     }
