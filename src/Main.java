@@ -62,14 +62,14 @@ public class Main {
 
         System.out.println();
         System.out.println("Задание-4");
-        int deliveryDistance = 20;
-        int distanceYear = 24;
+        int deliveryDistance = 101;
+        int deliveryTime = 1;
         if (deliveryDistance <= 20) {
             System.out.println("Доставка займет сутки");
-        } else if (deliveryDistance <= 20 && deliveryDistance <= 60) {
-            System.out.println("Потребуется день и " + distanceYear + " часа");
-        } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
-            System.out.println("Потребуется два дня и " + distanceYear + "часа");
+        } else if (deliveryDistance <= 60) {
+            System.out.println("Потребуется дней: " + (deliveryTime + 1));
+        } else if (deliveryDistance <= 100) {
+            System.out.println("Потребуется дней: " + (deliveryTime +2));
         } else {
             System.out.println("Доставки нет");
         }
